@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="stylesheet.css">
 	<title>Raspberry Pi Web Server</title>
 	<script>
-		if(navigator.userAgent.match("Kindle")) {
+		if(navigator.userAgent.match("Kindle") || navigator.userAgent.match("Kobo") || navigator.userAgent.match("Nook")) {
 				window.location.replace("/kindle.html");
 		}
 	</script>
