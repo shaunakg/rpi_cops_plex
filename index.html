@@ -1,0 +1,30 @@
+<!doctype html>
+
+<script>
+		if(navigator.userAgent.match("Kindle")) {
+				window.location.replace("/kindle.html");
+		}
+</script>
+
+<h1>Raspberry Pi Server</h1>
+<h2><a href="/resources/wiki/">Click here for Wikipedia archive</a></h2>
+<p>This is the Raspberry Pi server main page. Here is a list of pages in this server:</p>
+<ul>
+		<li><a href="" id="plex_link"><b>PLEX Media Server - May not work</b></a></li>
+		<li><a href="/resources/ebooks">eBook Server</a></li>
+		<li><a href="/resources/ebooks">COPS</a></li>
+		<li><a href="/resources/wordpress">Test Wordpress Site</a></li>
+</ul>
+
+<h3>CREDITS</h3>
+<ul>
+		<li>eBook Server: @seblucas (Source code <a href="https://github.com/seblucas/cops">here</a>)</li>
+		<li>Main page: @shaunakg (Source code <a href="https://github.com/shaunakg/rpiserv-backend/">here</a>)</li>
+		<li>Server: Raspberry Pi (<a href="https://raspberrypi.org">Link</a>)</li>
+		<li>Server backend code: nGINX/APACHE and PHP</li>
+</ul>
+<script>
+const plexlink = document.getElementById("plex_link");
+plexlink.href = window.location.origin + ":32400/web";
+
+</script>
